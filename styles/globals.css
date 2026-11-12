@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Poppins:wght@400;500;600;700;900&display=swap');
+
+/* Default CSS variable values (overridden at runtime by applyTheme) */
+:root {
+  --color-primary:        #E8192C;
+  --color-primary-fg:     #ffffff;
+  --color-background:     #ffffff;
+  --color-surface:        #f5f5f5;
+  --color-card:           #ffffff;
+  --color-text:           #111111;
+  --color-muted:          #9ca3af;
+  --color-border:         #e5e7eb;
+  --color-nav-active:     #E8192C;
+  --color-nav-inactive:   #111111;
+  --color-popup-bg:       #111111;
+  --color-overlay:        rgba(0,0,0,0.55);
+  --color-btn-primary:    #E8192C;
+  --color-btn-primary-fg: #ffffff;
+  --color-badge-bg:       rgba(0,0,0,0.55);
+  --color-badge-fg:       #ffffff;
+  --color-gradient-from:  rgba(0,0,0,0);
+  --color-gradient-to:    #E8192C;
+  --color-check:          #E8192C;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: 'Young Serif', serif !important;
+}
+
+/* Hide scrollbar for category tabs */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
