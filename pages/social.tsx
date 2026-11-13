@@ -4,6 +4,7 @@ import NextImage from "next/image";
 import BottomNav from "../components/BottomNav";
 import { restaurant } from "../content/clients/default/restaurant";
 import { socials, SocialLink } from "../content/clients/default/socials";
+import type { JSX } from 'react';
 
 function buildOsmUrl(lat: number, lng: number, zoom: number) {
   const delta = 0.008 / (zoom / 14);
